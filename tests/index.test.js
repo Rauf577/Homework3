@@ -59,3 +59,4 @@ describe("getsumormultmax",function(){
         assert.equal(getsumormultmax(1,2,2),8);
     })
 });
+describe()
