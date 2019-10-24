@@ -59,4 +59,24 @@ describe("getsumormultmax",function(){
         assert.equal(getsumormultmax(1,2,2),8);
     })
 });
+describe("assesstudent",function(){
+    it("если оценки студента меньше 20 и  больше 0 ", function(){
+        assert.equal(assesstudent(17),"ваша оченка F")
+    })
+    it("если оценки студента меньше 40 и  больше или равно 20 ", function(){
+        assert.equal(assesstudent(23),"ваша оченка E")
+    })  
+    it("если оценки студента меньше 60 и  больше или равно 40 ", function(){
+        assert.equal(assesstudent(57),"ваша оченка D")
+    })
+    it("если оценки студента меньше 75 и  больше или равно 60 ", function(){
+        assert.equal(assesstudent(65),"ваша оченка C")
+    })
+    it("если оценки студента меньше 90 и  больше или равно 75 ", function(){
+        assert.equal(assesstudent(77),"ваша оченка B")
+    })
+    it("если оценки студента равно или меньше 100 и  больше или равно 90 ", function(){
+        assert.equal(assesstudent(99),"ваша оченка A")
+    })
+} )
 describe()
